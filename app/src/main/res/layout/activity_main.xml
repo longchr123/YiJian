@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorChoose">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="题目练习"
+            android:textColor="@color/colorBigTitle"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/iv_yiqiandao"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"/>
+        <com.ant.liao.GifView
+            android:id="@+id/gv"
+            android:layout_width="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp" />
+    </FrameLayout>
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"></LinearLayout>
+    <include layout="@layout/background_line" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_xiti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="题目练习"
+            android:drawableTop="@drawable/rb_main"
+            android:textColor="@color/rb_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="直播课"
+            android:drawableTop="@drawable/rb_noti"
+            android:textColor="@color/rb_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_cuoti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="错题复习"
+            android:drawableTop="@drawable/rb_cuoti"
+            android:textColor="@color/rb_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="更多"
+            android:drawableTop="@drawable/rb_set"
+            android:textColor="@color/rb_textcolor" />
+    </RadioGroup>
+</LinearLayout>
